@@ -9,13 +9,13 @@ export async function generateStaticParams() {
 }
 
 interface PageProps {
-  params: Promise<{
+  params: {
     id: string;
-  }>;
+  };
 }
 
-export default async function ProjectDetailsPage({ params }: PageProps) {
-  const { id } = await params;
+export default function ProjectDetailsPage({ params }: PageProps) {
+  const { id } = params;
   const projectId = Number(id);
   const projectData = projects.find((p) => p.id === projectId);
 
