@@ -16,6 +16,50 @@ export interface Project {
 export const projects: Project[] = [
   {
     id: 1,
+    name: "Shibir",
+    category: "Full Stack",
+    image: "/shibir-client.png",
+    mainTechnologyStack: [
+      "Next.js",
+      "TypeScript",
+      "Express.js",
+      "PostgreSQL",
+      "Prisma ORM",
+      "Better Auth",
+      "Tailwind CSS",
+      "shadcn/ui",
+    ],
+    briefDescription:
+      "A modern full-stack web application developed for digital reporting, syllabus tracking, and role-based organizational management.",
+    liveProjectLink: "https://shibir-client.vercel.app/",
+    githubRepositoryLinkClientSide:
+      "https://github.com/Rahmot15/shibir-client-B6A5.git",
+    githubRepositoryLinkServerSide:
+      "https://github.com/Rahmot15/shibir-server-B6A5.git",
+    challengesFaced: [
+      "Implementing role-based access control and protected routes",
+      "Managing complex reporting workflows for multiple user roles",
+      "Designing scalable database schema using Prisma ORM",
+      "Handling secure authentication and session management",
+      "Optimizing responsive dashboard layouts for all devices",
+    ],
+    potentialImprovements: [
+      "Add AI chatbot with RAG integration",
+      "Implement real-time chat/support system using Socket.IO",
+      "Add push notification system",
+      "Improve analytics and reporting insights",
+      "Add offline/PWA support",
+    ],
+    futurePlans: [
+      "Online bookstore integration with SSLCommerz & Stripe",
+      "Advanced admin analytics dashboard",
+      "Real-time messaging and communication system",
+      "Smart syllabus recommendation system",
+      "Mobile app version using React Native",
+    ],
+  },
+  {
+    id: 2,
     name: "BazarIo",
     category: "Full Stack",
     image: "/image1.png",
@@ -58,7 +102,7 @@ export const projects: Project[] = [
     ],
   },
   {
-    id: 2,
+    id: 3,
     name: "BookStacker",
     category: "Full Stack",
     image: "/image2.png",
@@ -97,49 +141,6 @@ export const projects: Project[] = [
       "Integration with external book APIs (Google Books, Open Library)",
       "Advanced search and filter options",
       "Community features like forums and book clubs",
-    ],
-  },
-  {
-    id: 3,
-    name: "Plants",
-    category: "Full Stack",
-    image: "/image3.png",
-    mainTechnologyStack: [
-      "React.js",
-      "Node.js",
-      "Express.js",
-      "MongoDB",
-      "JWT Authentication",
-      "Tailwind CSS",
-      "React Router",
-    ],
-    briefDescription:
-      "A full-stack Plants web app for managing plant information, user authentication, and CRUD operations with role-based access control and responsive UI.",
-    liveProjectLink: "https://plants-auth-client.web.app",
-    githubRepositoryLinkClientSide:
-      "https://github.com/Rahmot15/Plant-Care-Tracker-client-side.git",
-    githubRepositoryLinkServerSide:
-      "https://github.com/Rahmot15/Plant-Care-Tracker-server-side.git",
-    challengesFaced: [
-      "Implementing role-based user authentication and authorization",
-      "Designing responsive and user-friendly plant listing and detail pages",
-      "Handling CRUD operations with proper validation",
-      "Managing image uploads and storage",
-      "Ensuring secure API endpoints with JWT",
-    ],
-    potentialImprovements: [
-      "Add advanced search and filtering for plants",
-      "Implement user profiles with plant favorites and watchlists",
-      "Add comment and review system for plants",
-      "Integrate social media sharing for plant details",
-      "Optimize performance and SEO",
-    ],
-    futurePlans: [
-      "Mobile app version with push notifications",
-      "Integration with IoT devices for plant monitoring",
-      "AI-based plant disease detection and care suggestions",
-      "Multi-language support",
-      "Offline mode and PWA support",
     ],
   },
 ];
