@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Terminal } from "lucide-react";
+import { Terminal, Heart } from "lucide-react";
 import { FaGithub, FaLinkedin, FaTwitter } from "react-icons/fa";
 
 const socialLinks = [
@@ -97,8 +97,8 @@ export function Footer() {
           <p className="text-gray-400 text-sm">
             © {new Date().getFullYear()} Rahmatullah. All rights reserved.
           </p>
-          <p className="text-gray-500 text-xs mt-2">
-            Made with ❤️ and Next.js
+          <p className="text-gray-500 text-xs mt-2 flex items-center justify-center gap-2">
+            Made with <Heart size={16} className="text-red-500 fill-red-500" /> and Next.js
           </p>
         </motion.div>
 
